@@ -36,6 +36,11 @@ button {
     cursor: pointer;
 }
 
+#introduction {
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* Styles pour le bouton "Vrai" en cas de réponse correcte */
 #trueButton.correct {
     background-color: #4CAF50; /* Vert */

@@ -27,7 +27,7 @@ function startTimer() {
     const timerInterval = setInterval(function() {
         timeLeft--;
         timeElement.textContent = timeLeft;
-        if (timeLeft === 0) {
+        if (timeLeft == 0) {
             clearInterval(timerInterval);
             questionIndex++;
             showQuestion();
