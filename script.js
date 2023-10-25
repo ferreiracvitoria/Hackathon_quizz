@@ -19,7 +19,8 @@ function showQuestion() {
         startTimer();
         resetButtonColors();
     } else {
-        questionElement.textContent = "Quiz terminé!";
+        // Rediriger vers "end.html" lorsque le quiz est terminé
+        window.location.href = "end.html";
     }
 }
 
