@@ -13,7 +13,7 @@ const questions = [
 
 function showQuestion() {
     if (questionIndex < questions.length) {
-        questionElement.textContent = `Question ${questionIndex + 1} : ${questions[questionIndex].question}`;
+        questionElement.textContent = `Question ${questionIndex + 1}/30 : ${questions[questionIndex].question}`;
         timeLeft = 10;
         timeElement.textContent = timeLeft;
         startTimer();
@@ -51,6 +51,7 @@ trueButton.addEventListener('click', function() {
         }
         questionIndex++;
         showQuestion();
+
     }
 });
 
@@ -77,3 +78,14 @@ function showMessage(message) {
 }
 
 showQuestion();
+
+
+// AJOUTER SCORE - ne fonctionne pas
+
+let scoreinit=0;
+let score = document.getElementById('score');
+
+if (questions[questionIndex].answer) {
+    score.textContent = scoreinit;
+    scoreinit++;
+}
