@@ -36,26 +36,32 @@ button {
     cursor: pointer;
 }
 
-/* Styles pour le bouton "Vrai" en cas de réponse correcte */
 #trueButton.correct {
-    background-color: #156ee4; /* Vert */
+    background-color: #00ff00; /* Vert */
     color: #fff; /* Texte blanc */
 }
 
-/* Styles pour le bouton "Faux" en cas de réponse correcte */
 #falseButton.correct {
-    background-color: #00ff22; /* Vert */
+    background-color: #00ff00; /* Vert */
     color: #fff; /* Texte blanc */
 }
 
-/* Styles pour le bouton "Vrai" en cas de réponse incorrecte */
 #trueButton.incorrect {
-    background-color: #08ffad; /* Rouge */
+    background-color: #ff0000; /* Rouge */
     color: #fff; /* Texte blanc */
 }
 
-/* Styles pour le bouton "Faux" en cas de réponse incorrecte */
-#falseButton.incorrect {
-    background-color: #33ff44; /* Rouge */
+#trueButton.selected {
+    background-color: rgb(54, 54, 255);
     color: #fff; /* Texte blanc */
+}
+
+#falseButton.incorrect {
+    background-color: #ff0000; /* Rouge */
+    color: #fff; /* Texte blanc */
+}
+
+#falseButton.selected {
+    background-color: rgb(54, 54, 255);
+    color: #fff;
 }
