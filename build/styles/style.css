@@ -1,6 +1,6 @@
 @font-face {
     font-family: "ocr";
-    src: url("/projet/assets/fonts/OCRAEXT.TTF");
+    src: url("/assets/fonts/OCRAEXT.TTF");
 }
 
 body {
@@ -35,7 +35,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 600px;
-    height: 400px;
+    height: 500px;
     margin: 0 auto;
     position: relative;
     top: 20%;
@@ -49,12 +49,26 @@ h1 {
 
 p {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #timer {
     font-size: 16px;
     margin-bottom: 10px;
+    font-family: "ocr";
+}
+
+#scores{
+    font-family: "ocr";
+    position: fixed;
+    display: block;
+    justify-content: center;
+    margin-top: 100px;
+
+    /* background-color: #0026ff;
+    padding: 10px;
+    color: #fff; */
+    
 }
 
 .button-container {
@@ -62,13 +76,28 @@ p {
     justify-content: center;
 }
 
-.btnstart {
+#rejouerbtn a{
+    text-decoration: none;
+    color: #1d1736;
+    font-family: 'ocr';
+    
+}
+
+#rejouerbtn a:hover{
+    color: #fff;
+}
+
+#rejouerbtn a:active{
+    color: #fff;
+}
+
+.btnstart, #rejouerbtn {
     margin-top: 10px;
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
     border: 1px solid #1d1736;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
@@ -79,9 +108,10 @@ p {
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.btnstart:hover {
+.btnstart:hover, #rejouerbtn:hover{
     color: #fff;
     background: #1d1736;
     box-shadow: 0 0 30px 5px #1d1736;
@@ -90,13 +120,13 @@ p {
     transition: all 0.2s ease-out;
 }
 
-.btnstart:hover::before {
+.btnstart:hover::before, #rejouerbtn:hover::before{
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
 
-.btnstart::before {
+.btnstart::before, #rejouerbtn::before{
     content: '';
     display: block;
     width: 0px;
@@ -130,7 +160,7 @@ p {
     }
 }
 
-.btnstart:active {
+.btnstart:active, #rejouerbtn:active{
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
@@ -179,6 +209,9 @@ p {
     transition: all .3s;
     box-shadow: 6px 6px 12px #c5c5c5,
         -6px -6px 12px #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin-bottom: 8rem;
 }
 
 .buttonTrueFalse:active {
