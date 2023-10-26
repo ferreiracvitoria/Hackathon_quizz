@@ -65,6 +65,7 @@ function showQuestion() {
         trueButton.style.display = 'none'; //masque le bouton Vrai
         falseButton.style.display = 'none'; //masque le bouton Faux
         divTimer.style.display ='none'; //masque le timer
+        nextButton.style.display ='block'; //masque le timer
 
     }
 }
@@ -113,7 +114,5 @@ falseButton.addEventListener('click', function() {
         setTimeout(showQuestion, 2000); //temps pour que l'user voir la couleur des boutons
     }
 });
-
-
 
 showQuestion();
