@@ -16,7 +16,7 @@ body {
 
 
 #introduction{
-    margin-top: 40px;
+    margin-top: 75px;
     font-size: 1.6rem;
 }
 
@@ -42,8 +42,9 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
+    margin-top: 10px;
     font-family: "ocr", sans-serif;
 }
 
@@ -71,6 +72,27 @@ p {
     
 }
 
+.timerColor {
+    width: 20px;
+    height: 31px;
+    background-color: green;
+}
+
+
+.timerColor,
+.timerMask {
+    position: absolute;
+    top: 82px;
+    left: 318px;
+}
+
+.timerEnd {
+    height: 0;
+    transition: height linear 10s, top linear 10s;
+    top: 113px;
+
+}
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -92,9 +114,9 @@ p {
 }
 
 .btnstart, #rejouerbtn {
-    margin-top: 10px;
+    margin-top: 40px;
     position: relative;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 7px;
     border: 1px solid #1d1736;
     font-size: 20px;
